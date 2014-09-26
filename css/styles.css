@@ -1305,6 +1305,16 @@ footer {
   background: transparent url({{ site.root_url }}/img/img/dataBoot.png) repeat 0 100%;
   padding-bottom: 300px; }
 
+.table p,
+.table li { font-size: 15px;}
+.table strong {
+	font-weight: 700;
+}
+.td {
+	border-top: 1px solid #ddd;
+	padding-top: 8px;
+}
+
 /* =Media queries
 -------------------------------------------------------------- */
 @media screen and (max-width: 767px) {
@@ -1313,6 +1323,17 @@ footer {
     position: relative;
     width: 100%;
     height: auto; }
+  .navbar {
+	  height: auto;
+  }
+  .table {
+	  width: 100%;
+  }
+  	.table p,
+  	.table li { font-size: 13px;}
+  	.table .col-sm-4 a { 
+	  	display: inline;
+  	}
   .navbar .logo {
     margin: 24px auto; }
    .col-sm-4 a {
@@ -1320,7 +1341,11 @@ footer {
 	   width: 100%;
 	   text-align: center;
    } 
-   .logonavbar { margin: 20px auto 0;}
+   .navbar .col-sm-2 a { 
+   		display: block;
+   		text-align: center;
+   	}
+   .logonavbar { margin: 20px auto 13px;}
   .navbar-brand {
     float: none;
     height: auto;
