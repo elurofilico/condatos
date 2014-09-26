@@ -47,9 +47,21 @@ function csvArrayToJSON(csvArray) {
 function buildScheduleHtml(events) {
   var html = "";
 
-  var eventsByHour = _.groupBy(events, 'Hora Inicio');
+  // Sets a new variable which holds the hour without minutes
+  _.each(events, function(element, index, list) {
+    var hour = element['Hora Inicio'].split("");
+    hour.pop();
+    hour.pop();
+    element['hour'] = hour.join("");
+  });
+
+  var eventsByHour = _.groupBy(events, 'hour');
   _.each(eventsByHour, function(value, key) {
-    html += buildScheduleRow(eventsByHour[key], key);
+    var hour = key.split("");
+    if (hour.length == 1) hour.unshift("0");
+    hour = hour.join("").concat(":00");
+
+    html += buildScheduleRow(eventsByHour[key], hour);
   });
 
   return html;
