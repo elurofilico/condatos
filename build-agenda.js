@@ -96,7 +96,12 @@ function buildEventLink(event) {
   event['title'] = language == 'en' ? event['Panel inglés'] : event['Panel español'];
 
   var klass = "btn-<%= e['trackClass'] %> btn btn-default btn-s";
-  var href = "../agenda/" + language + "-<%= e.Día %>-<%= e['Hora Inicio'] %>-<%= e.trackClass %>.html";
+  var href = '';
+  if (_.contains(['otros', 'condatos'], event.trackClass))
+    href = '#';
+  else
+    href = "../agenda/" + language + "-<%= e.Día %>-<%= e['Hora Inicio'] %>-<%= e.trackClass %>.html";
+
   var template = "<a class='" + klass + "' href='" + href + "'><%= e.title %></a>";
   var compiled = _.template(template);
   return compiled({ e: event });
