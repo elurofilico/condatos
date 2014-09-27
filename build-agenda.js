@@ -1,5 +1,6 @@
-var csv = require('csv');
-var _ = require('./bower_components/underscore/underscore-min.js');
+var csv = require('csv'),
+    fs  = require('fs'),
+    _   = require('./bower_components/underscore/underscore-min.js');
 
 /**
  * For local use:
@@ -55,7 +56,21 @@ function csvArrayToJSON(csvArray) {
 }
 
 function buildWorkshopsHtml(events) {
-  console.log("Will process " + events.length);
+  var workshops = _.where(events, { 'Track': 'Taller' });
+
+  _.each(workshops, function(element, index, list) {
+    var path = "agenda/" + language + "-" + element['Día'] + "-talleres-" + element.Id + ".html";
+    fs.readFile('./templates/workshop-' + language + '.html', function (err, data) {
+      if (err) throw err;
+      var template = data.toString();
+      var compiled = _.template(template);
+      var html = compiled({ workshop: element });
+      fs.writeFile(path, html, function (err) {
+        if (err) throw err;
+      });
+    });
+  });
+
   return true;
 }
 
