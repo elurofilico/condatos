@@ -12,28 +12,38 @@ var _ = require('./bower_components/underscore/underscore-min.js');
 
 var https = require('https');
 var csvUrl = 'https://docs.google.com/spreadsheets/export?id=15Dtd8_Y14no-0KSxh8zNwiNnmo3LIJZyiS-je7liCTM&exportFormat=csv';
+var workshopsUrl = csvUrl + '&gid=1633917131';
 
-var language = process.argv[2] || "es";
+var language = process.argv[2] || 'es';
+var job = process.argv[3] || 'schedule';
 
-https.get(csvUrl, function(res) {
-  var response = "";
+if (job == 'workshops')
+  makeSomeMagic(workshopsUrl, buildWorkshopsHtml);
+else
+  makeSomeMagic(csvUrl, buildScheduleHtml);
 
-  res.on('data', function(chunk) {
-    response += chunk;
-  });
+function makeSomeMagic(url, job) {
 
-  res.on('end', function() {
-    response = response.toString();
-    csv.parse(response, function(err, output) {
-      var events = csvArrayToJSON(output);
-      var html = buildScheduleHtml(events);
-      console.log(html);
+  https.get(url, function(res) {
+    var response = "";
+
+    res.on('data', function(chunk) {
+      response += chunk;
     });
+
+    res.on('end', function() {
+      response = response.toString();
+      csv.parse(response, function(err, output) {
+        var events = csvArrayToJSON(output);
+        job(events);
+      });
+    });
+
+  }).on('error', function(e) {
+    console.error(e);
   });
 
-}).on('error', function(e) {
-  console.error(e);
-});
+}
 
 function csvArrayToJSON(csvArray) {
   var headers = _.head(csvArray);
@@ -42,6 +52,11 @@ function csvArrayToJSON(csvArray) {
     return _.object(headers, value);
   });
   return rowObjects;
+}
+
+function buildWorkshopsHtml(events) {
+  console.log("Will process " + events.length);
+  return true;
 }
 
 function buildScheduleHtml(events) {
@@ -64,7 +79,8 @@ function buildScheduleHtml(events) {
     html += buildScheduleRow(eventsByHour[key], hour);
   });
 
-  return html;
+  console.log(html);
+  return true;
 }
 
 function buildScheduleRow(eventsInAnHour, hour) {
