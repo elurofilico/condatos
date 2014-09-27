@@ -5,17 +5,17 @@ var _ = require('./bower_components/underscore/underscore-min.js');
  * For local use:
  * % ✗ python -m SimpleHTTPServer
  * var http = require('http');
- * var csv_url = 'http://localhost:8000/agenda.csv';
+ * var csvUrl = 'http://localhost:8000/agenda.csv';
  * use http.get
  *
 */
 
 var https = require('https');
-var csv_url = 'https://docs.google.com/spreadsheets/export?id=15Dtd8_Y14no-0KSxh8zNwiNnmo3LIJZyiS-je7liCTM&exportFormat=csv';
+var csvUrl = 'https://docs.google.com/spreadsheets/export?id=15Dtd8_Y14no-0KSxh8zNwiNnmo3LIJZyiS-je7liCTM&exportFormat=csv';
 
 var language = process.argv[2] || "es";
 
-https.get(csv_url, function(res) {
+https.get(csvUrl, function(res) {
   var response = "";
 
   res.on('data', function(chunk) {
