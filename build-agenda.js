@@ -1,39 +1,50 @@
-var csv = require('csv');
-var _ = require('./bower_components/underscore/underscore-min.js');
+var csv = require('csv'),
+    fs  = require('fs'),
+    _   = require('./bower_components/underscore/underscore-min.js');
 
 /**
  * For local use:
  * % ✗ python -m SimpleHTTPServer
  * var http = require('http');
- * var csv_url = 'http://localhost:8000/agenda.csv';
+ * var csvUrl = 'http://localhost:8000/agenda.csv';
  * use http.get
  *
 */
 
 var https = require('https');
-var csv_url = 'https://docs.google.com/spreadsheets/export?id=15Dtd8_Y14no-0KSxh8zNwiNnmo3LIJZyiS-je7liCTM&exportFormat=csv';
+var csvUrl = 'https://docs.google.com/spreadsheets/export?id=15Dtd8_Y14no-0KSxh8zNwiNnmo3LIJZyiS-je7liCTM&exportFormat=csv';
+var workshopsUrl = csvUrl + '&gid=1633917131';
 
-var language = process.argv[2] || "es";
+var language = process.argv[2] || 'es';
+var job = process.argv[3] || 'schedule';
 
-https.get(csv_url, function(res) {
-  var response = "";
+if (job == 'workshops')
+  makeSomeMagic(workshopsUrl, buildWorkshopsHtml);
+else
+  makeSomeMagic(csvUrl, buildScheduleHtml);
 
-  res.on('data', function(chunk) {
-    response += chunk;
-  });
+function makeSomeMagic(url, job) {
 
-  res.on('end', function() {
-    response = response.toString();
-    csv.parse(response, function(err, output) {
-      var events = csvArrayToJSON(output);
-      var html = buildScheduleHtml(events);
-      console.log(html);
+  https.get(url, function(res) {
+    var response = "";
+
+    res.on('data', function(chunk) {
+      response += chunk;
     });
+
+    res.on('end', function() {
+      response = response.toString();
+      csv.parse(response, function(err, output) {
+        var events = csvArrayToJSON(output);
+        job(events);
+      });
+    });
+
+  }).on('error', function(e) {
+    console.error(e);
   });
 
-}).on('error', function(e) {
-  console.error(e);
-});
+}
 
 function csvArrayToJSON(csvArray) {
   var headers = _.head(csvArray);
@@ -42,6 +53,25 @@ function csvArrayToJSON(csvArray) {
     return _.object(headers, value);
   });
   return rowObjects;
+}
+
+function buildWorkshopsHtml(events) {
+  var workshops = _.where(events, { 'Track': 'Taller' });
+
+  _.each(workshops, function(element, index, list) {
+    var path = "agenda/" + language + "-" + element['Día'] + "-talleres-" + element.Id + ".html";
+    fs.readFile('./templates/workshop-' + language + '.html', function (err, data) {
+      if (err) throw err;
+      var template = data.toString();
+      var compiled = _.template(template);
+      var html = compiled({ workshop: element });
+      fs.writeFile(path, html, function (err) {
+        if (err) throw err;
+      });
+    });
+  });
+
+  return true;
 }
 
 function buildScheduleHtml(events) {
@@ -64,7 +94,8 @@ function buildScheduleHtml(events) {
     html += buildScheduleRow(eventsByHour[key], hour);
   });
 
-  return html;
+  console.log(html);
+  return true;
 }
 
 function buildScheduleRow(eventsInAnHour, hour) {
