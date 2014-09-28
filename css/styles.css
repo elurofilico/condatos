@@ -1328,6 +1328,10 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    background-color: white;
+  }
+
   #home.navbar {
     top: 0;
     position: relative;
@@ -1356,7 +1360,7 @@ footer {
    		text-align: center;
    	}
   .navbar-brand {
-    float: none;
+    float: left;
     height: auto;
     text-align: center; }
     .navbar-brand li {
