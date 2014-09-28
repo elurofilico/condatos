@@ -851,9 +851,7 @@ h4 {
 
 .navbar { border: 0; }
 
-.navbar.navbar-condatos li>a,
-.navbar.navbar-condatos li>a:hover,
-.navbar.navbar-condatos li>a:focus {
+.navbar.navbar-condatos li>a {
   color: white;
 }
 
@@ -861,7 +859,7 @@ h4 {
   color: #555;
 }
 
-.navbar.navbar-condatos a:hover, .navbar.navbar-condatos a:focus {
+.navbar.navbar-condatos li>a:hover, .navbar.navbar-condatos li>a:focus {
   color: #ff5a50;
 }
 
