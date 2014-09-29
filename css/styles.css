@@ -76,6 +76,7 @@ a.btn.btn-politicas { background-color: #e6ff00; }
 a.btn.btn-herramientas { background-color: #ff5a50; }
 a.btn.btn-innovacion { background-color: #b1aadc; }
 a.btn.btn-taller { background-color: #00d4f1; }
+a.btn.btn-otros { background-color: transparent; }
 
 .btn{
   white-space: normal;
