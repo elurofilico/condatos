@@ -62,7 +62,16 @@ a.btn.btn-s {
   text-decoration: none;
 }
 
-a.btn.btn-condatos, a.btn.btn-Plenarias { background-color: #a0f0dc; }
+table a.btn.btn-s {
+  border-color: transparent;
+  border-radius: 0;
+  width: 100%;
+}
+
+a.btn.btn-condatos, a.btn.btn-Plenarias {
+  background-color: #a0f0dc;
+  height: 100%;
+}
 a.btn.btn-politicas { background-color: #e6ff00; }
 a.btn.btn-herramientas { background-color: #ff5a50; }
 a.btn.btn-innovacion { background-color: #b1aadc; }
@@ -1226,6 +1235,10 @@ footer {
 table {
   border-collapse: separate;
   border-spacing: 10px 20px;
+}
+
+td {
+  vertical-align: top;
 }
 
 /* acerca
