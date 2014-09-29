@@ -68,6 +68,10 @@ table a.btn.btn-s {
   width: 100%;
 }
 
+div.table table.table {
+  background-color: transparent;
+}
+
 a.btn.btn-condatos, a.btn.btn-Plenarias {
   background-color: #a0f0dc;
   height: 100%;
