@@ -1,7 +1,28 @@
-agentes
+ConDatos.org
 =======
 
-Página de pre-lanzamiento de la iniciativa de "Agentes de Innovación".
+![](http://img.shields.io/badge/unicorn-approved-ff69b4.svg)
 
-Dependencias:
-* Jekyll: Generador de páginas estáticas
+II Open Data Regional Conference for Latin America and the Caribbean
+Mexico City 2014
+
+
+Secret Sauce:
+* Jekyll
+* Bower
+* Grunt
+
+Build:
+```
+% grunt build
+```
+
+Run:
+```
+% grunt run
+```
+
+Updating the agenda:
+```
+% grunt agenda
+```

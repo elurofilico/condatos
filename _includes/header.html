@@ -1,0 +1,77 @@
+<header {% if page.class == "landing" %} {{ 'id="home"' }} {% endif %} class="navbar">
+
+  {% assign blog_link = 'Blog' %}
+  {% assign blog_href = 'http://condatoslatam.tumblr.com/' %}
+  {% assign registration_href = 'https://docs.google.com/a/vectores.in/forms/d/1MoBsv3PLaFzNTqkdcyNiwJlrY4fOUu5N2-F_wSYz71Y/viewform' %}
+
+  {% if page.language == 'en' %}
+    {% assign dropdown_title = 'About the event' %}
+    {% assign dropdown_link_01 = 'Home' %}
+    {% assign dropdown_href_01 = '/indexen.html' %}
+    {% assign dropdown_link_02 = 'Agenda' %}
+    {% assign dropdown_href_02 = '/indexen.html#programaen' %}
+    {% assign dropdown_link_03 = 'Side events' %}
+    {% assign dropdown_href_03 = '/indexen.html#eventos-paralelosen' %}
+    {% assign dropdown_link_04 = 'About' %}
+    {% assign dropdown_href_04 = '/acercaen.html' %}
+    {% assign registration_link = 'Register' %}
+    {% assign nav_link_01 = 'About Mexico' %}
+    {% assign nav_href_01 = '/mexen.html' %}
+    {% assign lang_link = 'es' %}
+    {% assign lang_href = '/index.html' %}
+  {% else %}
+    {% assign dropdown_title = 'Sobre el evento' %}
+    {% assign dropdown_link_01 = 'Inicio' %}
+    {% assign dropdown_href_01 = '/index.html' %}
+    {% assign dropdown_link_02 = 'Agenda' %}
+    {% assign dropdown_href_02 = '/index.html#programa' %}
+    {% assign dropdown_link_03 = 'Eventos paralelos' %}
+    {% assign dropdown_href_03 = '/index.html#eventos-paralelos' %}
+    {% assign dropdown_link_04 = 'Acerca' %}
+    {% assign dropdown_href_04 = '/acerca.html' %}
+    {% assign registration_link = 'Regístrate' %}
+    {% assign nav_link_01 = 'Sobre México' %}
+    {% assign nav_href_01 = '/mex.html' %}
+    {% assign lang_link = 'en' %}
+    {% assign lang_href = '/indexen.html' %}
+  {% endif %}
+
+<nav class="navbar navbar-default navbar-condatos" role="navigation">
+  <div class="container container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img class="logonavbar" src="../img/condatos_logo.svg"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ dropdown_title }} <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ dropdown_href_01 }}">{{ dropdown_link_01 }}</a></li>
+            <li><a href="{{ dropdown_href_02 }}">{{ dropdown_link_02 }}</a></li>
+            <li><a href="{{ dropdown_href_03 }}">{{ dropdown_link_03 }}</a></li>
+            <li><a href="{{ dropdown_href_04 }}">{{ dropdown_link_04 }}</a></li>
+            <li><a href="{{ blog_href }}" target="_blank">{{ blog_link }}</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ nav_href_01 }}">{{ nav_link_01 }}</a></li>
+        <li><a href="{{ registration_href }}" target="_blank">{{ registration_link }}</a></li>
+        <li><a class="en" href="{{ lang_href }}">{{ lang_link }}</a></li>
+        <li><a class="tw" href="http://twitter.com/intent/tweet?text=.@ConDatosLATAM:%20evento%20regional%20más%20importante%20sobre%20datos%20abiertos,%20oct%201—2,%20Cd%20de%20México%20-%20condatos.org&hashtags=Condatos,ABRELATAM">Twitter</a></li>
+        <li><a class="fb" href="https://www.facebook.com/dialog/share?app_id=691498740931722&display=popup&href=http%3A%2F%2Fcondatos.org&picture=http://ramo23.com/condatos/img/ConDatos_facebook.jpg&caption=Reference%20Documentation&description=Using%20Dialogs%20to%20interact%20with%20users.&redirect_uri=http%3A%2F%2Fcondatos.org" target="_blank">Facebook</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
