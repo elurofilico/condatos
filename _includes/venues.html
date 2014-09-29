@@ -1,0 +1,28 @@
+{% if page.language == 'en' %}
+  {% assign venues_title = 'Venues' %}
+{% else %}
+  {% assign venues_title = 'Sedes' %}
+{% endif %}
+
+<!-- section sedes-->
+<section class="sedes">
+  <div class="container">
+    <div class="row">	
+      <h2>{{ venues_title }}</h2>
+      <p>
+      <a href="http://www.bibliotecademexico.gob.mx/">
+        <img src="../img/ciudadela_icon.png" alt="Octubre 1, Biblioteca de México">
+        <span>OCT 1</span>Biblioteca de México<span>&nbsp;</span>
+        <span>Plaza de la Ciudadela No.4, Col. Centro, México D.F., C.P. 06040</span><span>&nbsp;</span>
+      </a>
+
+      <a href="http://www.cinetecanacional.net/">
+        <img src="../img/cineteca_icon.png" alt="Octubre 2, Cineteca Nacional">
+        <span>OCT 2</span>Cineteca Nacional<span>&nbsp;</span>
+        <span>Av. México Coyoacán #389 Col. Xoco Del. Benito Juárez Mexico D.F. C.P 03330</span><span>&nbsp;</span>
+      </a>
+      </p>
+    </div>
+  </div>
+</section>
+
