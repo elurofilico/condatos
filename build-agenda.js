@@ -131,6 +131,7 @@ function buildEventLink(event) {
   if (_.contains(['otros', 'condatos'], event.trackClass)) {
     href = '#';
     klass += ' disabled';
+    event.title += '<br /><br />';
   } else {
     href = "../agenda/" + language + "-<%= e.Día %>-<%= e['Hora Inicio'] %>-<%= e.trackClass %>.html";
   }
