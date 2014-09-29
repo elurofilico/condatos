@@ -128,10 +128,12 @@ function buildEventLink(event) {
 
   var klass = "btn-<%= e['trackClass'] %> btn btn-default btn-s";
   var href = '';
-  if (_.contains(['otros', 'condatos'], event.trackClass))
+  if (_.contains(['otros', 'condatos'], event.trackClass)) {
     href = '#';
-  else
+    klass += ' disabled';
+  } else {
     href = "../agenda/" + language + "-<%= e.Día %>-<%= e['Hora Inicio'] %>-<%= e.trackClass %>.html";
+  }
 
   var template = "<a class='" + klass + "' href='" + href + "'><%= e.title %></a>";
   var compiled = _.template(template);
