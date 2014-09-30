@@ -3,6 +3,7 @@
   {% assign blog_link = 'Blog' %}
   {% assign blog_href = 'http://condatoslatam.tumblr.com/' %}
   {% assign registration_href = 'https://docs.google.com/a/vectores.in/forms/d/1MoBsv3PLaFzNTqkdcyNiwJlrY4fOUu5N2-F_wSYz71Y/viewform' %}
+  {% assign collab_agenda_href = 'https://colaborativa.herokuapp.com/' %}
 
   {% if page.language == 'en' %}
     {% assign dropdown_title = 'About the event' %}
@@ -15,6 +16,7 @@
     {% assign dropdown_link_04 = 'About' %}
     {% assign dropdown_href_04 = '/acercaen.html' %}
     {% assign registration_link = 'Register' %}
+    {% assign collab_agenda_link = 'Collaborative agenda' %}
     {% assign nav_link_01 = 'About Mexico' %}
     {% assign nav_href_01 = '/mexen.html' %}
     {% assign lang_link = 'es' %}
@@ -30,6 +32,7 @@
     {% assign dropdown_link_04 = 'Acerca' %}
     {% assign dropdown_href_04 = '/acerca.html' %}
     {% assign registration_link = 'Regístrate' %}
+    {% assign collab_agenda_link = 'Agenda colaborativa' %}
     {% assign nav_link_01 = 'Sobre México' %}
     {% assign nav_href_01 = '/mex.html' %}
     {% assign lang_link = 'en' %}
@@ -63,6 +66,7 @@
           </ul>
         </li>
         <li><a href="{{ nav_href_01 }}">{{ nav_link_01 }}</a></li>
+        <li><a href="{{ collab_agenda_href }}" target="_blank">{{ collab_agenda_link }}</a></li>
         <li><a href="{{ registration_href }}" target="_blank">{{ registration_link }}</a></li>
         <li><a class="en" href="{{ lang_href }}">{{ lang_link }}</a></li>
         <li><a class="tw" href="http://twitter.com/intent/tweet?text=.@ConDatosLATAM:%20evento%20regional%20más%20importante%20sobre%20datos%20abiertos,%20oct%201—2,%20Cd%20de%20México%20-%20condatos.org&hashtags=Condatos,ABRELATAM">Twitter</a></li>
