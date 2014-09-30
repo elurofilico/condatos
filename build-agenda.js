@@ -1,6 +1,7 @@
 var csv = require('csv'),
     fs  = require('fs'),
-    _   = require('./bower_components/underscore/underscore-min.js');
+    _   = require('./bower_components/underscore/underscore-min.js'),
+    pad = require('etherpad-lite-client');
 
 /**
  * For local use:
@@ -20,6 +21,8 @@ var job = process.argv[3] || 'schedule';
 
 if (job == 'workshops')
   makeSomeMagic(workshopsUrl, buildWorkshopsHtml);
+else if (job == 'pads')
+  makeSomeMagic(csvUrl, createPads);
 else
   makeSomeMagic(csvUrl, buildScheduleHtml);
 
@@ -72,6 +75,10 @@ function buildWorkshopsHtml(events) {
   });
 
   return true;
+}
+
+function createPads(events) {
+
 }
 
 function buildScheduleHtml(events) {
