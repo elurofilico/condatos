@@ -12,7 +12,7 @@ var csv = require('csv'),
 */
 
 var https = require('https');
-var csvUrl = 'https://docs.google.com/spreadsheets/export?id=15Dtd8_Y14no-0KSxh8zNwiNnmo3LIJZyiS-je7liCTM&exportFormat=csv';
+var csvUrl = 'https://docs.google.com/spreadsheets/export?id=1b5OBxMUsMnJSjCG88978PW6ZxZ1G5XISVAWJhR84bu8&exportFormat=csv';
 var workshopsUrl = csvUrl + '&gid=1633917131';
 
 var language = process.argv[2] || 'es';
