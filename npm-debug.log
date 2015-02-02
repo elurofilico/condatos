@@ -1,0 +1,308 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink /usr/bin/node
+5 warn package.json condatos@1.0.1 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/opt/lampp/htdocs/condatos',
+7 verbose install   [ 'csv',
+7 verbose install     'grunt',
+7 verbose install     'grunt-bower-concat',
+7 verbose install     'grunt-contrib-clean',
+7 verbose install     'grunt-contrib-concat',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-nodeunit',
+7 verbose install     'grunt-contrib-uglify',
+7 verbose install     'grunt-shell' ] ]
+8 info preinstall condatos@1.0.1
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'csv@0.4.0', null ]
+11 verbose cache add name=undefined spec="csv@0.4.0" args=["csv@0.4.0",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'csv@0.4.0',
+12 verbose parsed url   path: 'csv@0.4.0',
+12 verbose parsed url   href: 'csv@0.4.0' }
+13 verbose cache add [ 'grunt@~0.4.5', null ]
+14 verbose cache add name=undefined spec="grunt@~0.4.5" args=["grunt@~0.4.5",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'grunt@~0.4.5',
+15 verbose parsed url   path: 'grunt@~0.4.5',
+15 verbose parsed url   href: 'grunt@~0.4.5' }
+16 verbose cache add [ 'grunt-bower-concat@^0.3.0', null ]
+17 verbose cache add name=undefined spec="grunt-bower-concat@^0.3.0" args=["grunt-bower-concat@^0.3.0",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'grunt-bower-concat@^0.3.0',
+18 verbose parsed url   path: 'grunt-bower-concat@^0.3.0',
+18 verbose parsed url   href: 'grunt-bower-concat@^0.3.0' }
+19 verbose cache add [ 'grunt-contrib-clean@^0.6.0', null ]
+20 verbose cache add name=undefined spec="grunt-contrib-clean@^0.6.0" args=["grunt-contrib-clean@^0.6.0",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'grunt-contrib-clean@^0.6.0',
+21 verbose parsed url   path: 'grunt-contrib-clean@^0.6.0',
+21 verbose parsed url   href: 'grunt-contrib-clean@^0.6.0' }
+22 verbose cache add name="csv" spec="0.4.0" args=["csv","0.4.0"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '0.4.0',
+23 verbose parsed url   path: '0.4.0',
+23 verbose parsed url   href: '0.4.0' }
+24 verbose addNamed [ 'csv', '0.4.0' ]
+25 verbose addNamed [ '0.4.0', '0.4.0' ]
+26 verbose cache add name="grunt" spec="~0.4.5" args=["grunt","~0.4.5"]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: '~0.4.5',
+27 verbose parsed url   path: '~0.4.5',
+27 verbose parsed url   href: '~0.4.5' }
+28 verbose addNamed [ 'grunt', '~0.4.5' ]
+29 verbose addNamed [ null, '>=0.4.5-0 <0.5.0-0' ]
+30 verbose cache add name="grunt-bower-concat" spec="^0.3.0" args=["grunt-bower-concat","^0.3.0"]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: '^0.3.0',
+31 verbose parsed url   path: '^0.3.0',
+31 verbose parsed url   href: '^0.3.0' }
+32 verbose addNamed [ 'grunt-bower-concat', '^0.3.0' ]
+33 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+34 verbose cache add [ 'grunt-contrib-concat@^0.5.0', null ]
+35 verbose cache add name=undefined spec="grunt-contrib-concat@^0.5.0" args=["grunt-contrib-concat@^0.5.0",null]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: 'grunt-contrib-concat@^0.5.0',
+36 verbose parsed url   path: 'grunt-contrib-concat@^0.5.0',
+36 verbose parsed url   href: 'grunt-contrib-concat@^0.5.0' }
+37 verbose cache add [ 'grunt-contrib-jshint@~0.10.0', null ]
+38 verbose cache add name=undefined spec="grunt-contrib-jshint@~0.10.0" args=["grunt-contrib-jshint@~0.10.0",null]
+39 verbose parsed url { protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: 'grunt-contrib-jshint@~0.10.0',
+39 verbose parsed url   path: 'grunt-contrib-jshint@~0.10.0',
+39 verbose parsed url   href: 'grunt-contrib-jshint@~0.10.0' }
+40 verbose cache add [ 'grunt-contrib-nodeunit@~0.4.1', null ]
+41 verbose cache add name=undefined spec="grunt-contrib-nodeunit@~0.4.1" args=["grunt-contrib-nodeunit@~0.4.1",null]
+42 verbose parsed url { protocol: null,
+42 verbose parsed url   slashes: null,
+42 verbose parsed url   auth: null,
+42 verbose parsed url   host: null,
+42 verbose parsed url   port: null,
+42 verbose parsed url   hostname: null,
+42 verbose parsed url   hash: null,
+42 verbose parsed url   search: null,
+42 verbose parsed url   query: null,
+42 verbose parsed url   pathname: 'grunt-contrib-nodeunit@~0.4.1',
+42 verbose parsed url   path: 'grunt-contrib-nodeunit@~0.4.1',
+42 verbose parsed url   href: 'grunt-contrib-nodeunit@~0.4.1' }
+43 verbose cache add name="grunt-contrib-clean" spec="^0.6.0" args=["grunt-contrib-clean","^0.6.0"]
+44 verbose parsed url { protocol: null,
+44 verbose parsed url   slashes: null,
+44 verbose parsed url   auth: null,
+44 verbose parsed url   host: null,
+44 verbose parsed url   port: null,
+44 verbose parsed url   hostname: null,
+44 verbose parsed url   hash: null,
+44 verbose parsed url   search: null,
+44 verbose parsed url   query: null,
+44 verbose parsed url   pathname: '^0.6.0',
+44 verbose parsed url   path: '^0.6.0',
+44 verbose parsed url   href: '^0.6.0' }
+45 verbose addNamed [ 'grunt-contrib-clean', '^0.6.0' ]
+46 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+47 verbose cache add name="grunt-contrib-concat" spec="^0.5.0" args=["grunt-contrib-concat","^0.5.0"]
+48 verbose parsed url { protocol: null,
+48 verbose parsed url   slashes: null,
+48 verbose parsed url   auth: null,
+48 verbose parsed url   host: null,
+48 verbose parsed url   port: null,
+48 verbose parsed url   hostname: null,
+48 verbose parsed url   hash: null,
+48 verbose parsed url   search: null,
+48 verbose parsed url   query: null,
+48 verbose parsed url   pathname: '^0.5.0',
+48 verbose parsed url   path: '^0.5.0',
+48 verbose parsed url   href: '^0.5.0' }
+49 verbose addNamed [ 'grunt-contrib-concat', '^0.5.0' ]
+50 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+51 silly lockFile 47c410cb-grunt-contrib-concat-0-5-0 grunt-contrib-concat@^0.5.0
+52 verbose lock grunt-contrib-concat@^0.5.0 /home/mbalmaceda/.npm/47c410cb-grunt-contrib-concat-0-5-0.lock
+53 verbose cache add name="grunt-contrib-jshint" spec="~0.10.0" args=["grunt-contrib-jshint","~0.10.0"]
+54 verbose parsed url { protocol: null,
+54 verbose parsed url   slashes: null,
+54 verbose parsed url   auth: null,
+54 verbose parsed url   host: null,
+54 verbose parsed url   port: null,
+54 verbose parsed url   hostname: null,
+54 verbose parsed url   hash: null,
+54 verbose parsed url   search: null,
+54 verbose parsed url   query: null,
+54 verbose parsed url   pathname: '~0.10.0',
+54 verbose parsed url   path: '~0.10.0',
+54 verbose parsed url   href: '~0.10.0' }
+55 verbose addNamed [ 'grunt-contrib-jshint', '~0.10.0' ]
+56 verbose addNamed [ null, '>=0.10.0-0 <0.11.0-0' ]
+57 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+58 verbose lock grunt-contrib-jshint@~0.10.0 /home/mbalmaceda/.npm/956acfd4-grunt-contrib-jshint-0-10-0.lock
+59 verbose cache add name="grunt-contrib-nodeunit" spec="~0.4.1" args=["grunt-contrib-nodeunit","~0.4.1"]
+60 verbose parsed url { protocol: null,
+60 verbose parsed url   slashes: null,
+60 verbose parsed url   auth: null,
+60 verbose parsed url   host: null,
+60 verbose parsed url   port: null,
+60 verbose parsed url   hostname: null,
+60 verbose parsed url   hash: null,
+60 verbose parsed url   search: null,
+60 verbose parsed url   query: null,
+60 verbose parsed url   pathname: '~0.4.1',
+60 verbose parsed url   path: '~0.4.1',
+60 verbose parsed url   href: '~0.4.1' }
+61 verbose addNamed [ 'grunt-contrib-nodeunit', '~0.4.1' ]
+62 verbose addNamed [ null, '>=0.4.1-0 <0.5.0-0' ]
+63 silly lockFile 4d6b3342-grunt-contrib-nodeunit-0-4-1 grunt-contrib-nodeunit@~0.4.1
+64 verbose lock grunt-contrib-nodeunit@~0.4.1 /home/mbalmaceda/.npm/4d6b3342-grunt-contrib-nodeunit-0-4-1.lock
+65 verbose cache add [ 'grunt-contrib-uglify@~0.5.0', null ]
+66 verbose cache add name=undefined spec="grunt-contrib-uglify@~0.5.0" args=["grunt-contrib-uglify@~0.5.0",null]
+67 verbose parsed url { protocol: null,
+67 verbose parsed url   slashes: null,
+67 verbose parsed url   auth: null,
+67 verbose parsed url   host: null,
+67 verbose parsed url   port: null,
+67 verbose parsed url   hostname: null,
+67 verbose parsed url   hash: null,
+67 verbose parsed url   search: null,
+67 verbose parsed url   query: null,
+67 verbose parsed url   pathname: 'grunt-contrib-uglify@~0.5.0',
+67 verbose parsed url   path: 'grunt-contrib-uglify@~0.5.0',
+67 verbose parsed url   href: 'grunt-contrib-uglify@~0.5.0' }
+68 verbose cache add [ 'grunt-shell@^1.1.1', null ]
+69 verbose cache add name=undefined spec="grunt-shell@^1.1.1" args=["grunt-shell@^1.1.1",null]
+70 verbose parsed url { protocol: null,
+70 verbose parsed url   slashes: null,
+70 verbose parsed url   auth: null,
+70 verbose parsed url   host: null,
+70 verbose parsed url   port: null,
+70 verbose parsed url   hostname: null,
+70 verbose parsed url   hash: null,
+70 verbose parsed url   search: null,
+70 verbose parsed url   query: null,
+70 verbose parsed url   pathname: 'grunt-shell@^1.1.1',
+70 verbose parsed url   path: 'grunt-shell@^1.1.1',
+70 verbose parsed url   href: 'grunt-shell@^1.1.1' }
+71 verbose cache add name="grunt-contrib-uglify" spec="~0.5.0" args=["grunt-contrib-uglify","~0.5.0"]
+72 verbose parsed url { protocol: null,
+72 verbose parsed url   slashes: null,
+72 verbose parsed url   auth: null,
+72 verbose parsed url   host: null,
+72 verbose parsed url   port: null,
+72 verbose parsed url   hostname: null,
+72 verbose parsed url   hash: null,
+72 verbose parsed url   search: null,
+72 verbose parsed url   query: null,
+72 verbose parsed url   pathname: '~0.5.0',
+72 verbose parsed url   path: '~0.5.0',
+72 verbose parsed url   href: '~0.5.0' }
+73 verbose addNamed [ 'grunt-contrib-uglify', '~0.5.0' ]
+74 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+75 silly lockFile 2d901165-grunt-contrib-uglify-0-5-0 grunt-contrib-uglify@~0.5.0
+76 verbose lock grunt-contrib-uglify@~0.5.0 /home/mbalmaceda/.npm/2d901165-grunt-contrib-uglify-0-5-0.lock
+77 verbose cache add name="grunt-shell" spec="^1.1.1" args=["grunt-shell","^1.1.1"]
+78 verbose parsed url { protocol: null,
+78 verbose parsed url   slashes: null,
+78 verbose parsed url   auth: null,
+78 verbose parsed url   host: null,
+78 verbose parsed url   port: null,
+78 verbose parsed url   hostname: null,
+78 verbose parsed url   hash: null,
+78 verbose parsed url   search: null,
+78 verbose parsed url   query: null,
+78 verbose parsed url   pathname: '^1.1.1',
+78 verbose parsed url   path: '^1.1.1',
+78 verbose parsed url   href: '^1.1.1' }
+79 verbose addNamed [ 'grunt-shell', '^1.1.1' ]
+80 verbose addNamed [ null, '>=1.1.1-0 <2.0.0-0' ]
+81 silly lockFile 630d3bbc-grunt-shell-1-1-1 grunt-shell@^1.1.1
+82 verbose lock grunt-shell@^1.1.1 /home/mbalmaceda/.npm/630d3bbc-grunt-shell-1-1-1.lock
+83 silly lockFile 47c410cb-grunt-contrib-concat-0-5-0 grunt-contrib-concat@^0.5.0
+84 error Error: Attempt to unlock grunt-contrib-concat@^0.5.0, which hasn't been locked
+84 error     at unlock (/usr/lib/node_modules/npm/lib/utils/locker.js:44:11)
+84 error     at cb (/usr/lib/node_modules/npm/lib/cache/add-named.js:32:5)
+84 error     at /usr/lib/node_modules/npm/lib/cache/add-named.js:41:20
+84 error     at /usr/lib/node_modules/npm/lib/utils/locker.js:30:7
+84 error     at cb (/usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+84 error     at /usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+84 error     at Object.oncomplete (fs.js:108:15)
+85 error If you need help, you may report this *entire* log,
+85 error including the npm and node versions, at:
+85 error     <http://github.com/npm/npm/issues>
+86 error System Linux 3.13.0-36-generic
+87 error command "/usr/bin/node" "/usr/bin/npm" "install"
+88 error cwd /opt/lampp/htdocs/condatos
+89 error node -v v0.10.35
+90 error npm -v 1.4.28
+91 verbose exit [ 1, true ]
