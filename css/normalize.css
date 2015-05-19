@@ -539,7 +539,7 @@ table {
 .agenda-condatos{
 height:auto;
 width:100%;
-background:url("../img/santiago1.jpg");
+background:#A0F0DC;//url("../img/santiago1.jpg");
 background-size:cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -548,13 +548,15 @@ background-attachment: fixed;
 .titulo-agenda{
 padding-top:1em;
 padding-bottom:3em;
-color:#FFF;
+color:#4A4B5C;
+font-family: "brandon_textbold";
 }
 
 .titulo-agenda, h1{
 padding-left:0;
 margin-left:0;
-font-size:4em;
+font-size:2em;
+font-family: "Open Sans";
 }
 
 .convocatoria-intro{
@@ -566,7 +568,26 @@ padding:5em;
 }
 
 .convocatoria-intro-2{
-padding-top:16em;
+margin-top:500px;
+}
+
+.importante-text{
+color:#4A4B5C;
+font-size:20px;
+}
+
+.importante-text b{
+color:#000;
+font-size:30px;
+}
+
+.importante-text1{
+color:#4A4B5C;
+}
+
+.importante-text1 b{
+color:#000;
+font-size:22px;
 }
 
 .impacto-icon{
@@ -602,7 +623,8 @@ background: rgba(167, 219, 177, 0.78);
 .modalidades-presentacion{
 height:auto;
 width:100%;
-background:url("../img/santiago1.jpg");
+//background:url("../img/santiago1.jpg");
+background:#A0F0DC;
 background-size:cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -611,10 +633,11 @@ background-attachment: fixed;
 .titulo-modalidades-presentacion{
 padding-top:1em;
 padding-bottom:3em;
-color:#FFF;
+color:#4A4B5C;
 padding-left:0;
 margin-left:0;
 font-size:2em;
+font-family: "Open Sans";
 }
 
 .modalidades-img{
@@ -624,7 +647,7 @@ height:15em;
 
 .modalidades{
 padding:2.5em;
-margin:0;
+margin-top:0;
 }
 
 .img-modalidad1 {
@@ -632,14 +655,15 @@ width:15em;
 height:15em;
 margin:0;
 padding:0;
-background:url('../img/eye-icon.png');
+background:url('../img/geometry.gif');
 background-size:cover;
 }
 
-.img-modalidad1:hover {
-    cursor:pointer; 
-    background:url('../img/geometry.gif');
-    background-size:cover;
+.img-modalidad1:hover,
+.img-modalidad2:hover,
+.img-modalidad3:hover,
+.img-modalidad4:hover {
+    opacity:0.2;
 }
 
 .img-modalidad2 {
@@ -647,13 +671,8 @@ width:15em;
 height:15em;
 margin:0;
 padding:0;
-background:url('../img/eye-icon.png');
+background:url('../img/cuadrado.gif');
 background-size:cover;
-}
-
-.img-modalidad2:hover {
-    background:url('../img/cuadrado.gif');
-    background-size:cover;
 }
 
 .img-modalidad3 {
@@ -661,14 +680,8 @@ width:15em;
 height:15em;
 margin:0;
 padding:0;
-background:url('../img/eye-icon.png');
+background:url('../img/triangulo.gif');
 background-size:cover;
-}
-
-.img-modalidad3:hover {
-    cursor:pointer; 
-    background:url('../img/triangulo.gif');
-    background-size:cover;
 }
 
 .img-modalidad4 {
@@ -676,14 +689,8 @@ width:15em;
 height:15em;
 margin:0;
 padding:0;
-background:url('../img/eye-icon.png');
+background:url('../img/taller.gif');
 background-size:cover;
-}
-
-.img-modalidad4:hover {
-    cursor:pointer; 
-    background:url('../img/taller.gif');
-    background-size:cover;
 }
 
 .text-content{
