@@ -650,15 +650,6 @@ padding:2.5em;
 margin-top:0;
 }
 
-.img-modalidad1 {
-width:15em;
-height:15em;
-margin:0;
-padding:0;
-background:url('../img/geometry.gif');
-background-size:cover;
-}
-
 .img-modalidad1:hover,
 .img-modalidad2:hover,
 .img-modalidad3:hover,
@@ -666,12 +657,21 @@ background-size:cover;
     opacity:0.2;
 }
 
+.img-modalidad1 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/panel.png');
+background-size:cover;
+}
+
 .img-modalidad2 {
 width:15em;
 height:15em;
 margin:0;
 padding:0;
-background:url('../img/cuadrado.gif');
+background:url('../img/mesa.png');
 background-size:cover;
 }
 
@@ -680,7 +680,7 @@ width:15em;
 height:15em;
 margin:0;
 padding:0;
-background:url('../img/triangulo.gif');
+background:url('../img/workshop.png');
 background-size:cover;
 }
 
@@ -689,7 +689,7 @@ width:15em;
 height:15em;
 margin:0;
 padding:0;
-background:url('../img/taller.gif');
+background:url('../img/relampago.png');
 background-size:cover;
 }
 
