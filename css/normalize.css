@@ -525,3 +525,186 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+
+
+
+
+/* ==========================================================================
+   Signos
+   ========================================================================== */
+
+
+.agenda-condatos{
+height:auto;
+width:100%;
+background:#A0F0DC;//url("../img/santiago1.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.titulo-agenda{
+padding-top:1em;
+padding-bottom:3em;
+color:#4A4B5C;
+font-family: "brandon_textbold";
+}
+
+.titulo-agenda, h1{
+padding-left:0;
+margin-left:0;
+font-size:2em;
+font-family: "Open Sans";
+}
+
+.convocatoria-intro{
+background:#ccc;
+}
+
+.convocatoria-intro-1{
+padding:5em;
+}
+
+.convocatoria-intro-2{
+margin-top:500px;
+}
+
+.importante-text{
+color:#4A4B5C;
+font-size:20px;
+}
+
+.importante-text b{
+color:#000;
+font-size:30px;
+}
+
+.importante-text1{
+color:#4A4B5C;
+}
+
+.importante-text1 b{
+color:#000;
+font-size:22px;
+}
+
+.impacto-icon{
+text-align:center;
+}
+
+span.iconn{
+padding:0.5em;
+background:#FFF;
+border-bottom-width:1px;
+border-color:#000;
+border-radius:100%;
+font-size:5em;
+}
+
+span.iconn:hover{
+color:#9F90C2;
+background:#D4D9FE;
+}
+
+
+
+.contenido-pilares{
+padding-top:8em;
+padding-bottom:8em;
+margin-left:0;
+}
+
+.modal-header{
+background: rgba(167, 219, 177, 0.78);
+}
+
+.modalidades-presentacion{
+height:auto;
+width:100%;
+//background:url("../img/santiago1.jpg");
+background:#A0F0DC;
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.titulo-modalidades-presentacion{
+padding-top:1em;
+padding-bottom:3em;
+color:#4A4B5C;
+padding-left:0;
+margin-left:0;
+font-size:2em;
+font-family: "Open Sans";
+}
+
+.modalidades-img{
+width:15em;
+height:15em;
+}
+
+.modalidades{
+padding:2.5em;
+margin-top:0;
+}
+
+.img-modalidad1:hover,
+.img-modalidad2:hover,
+.img-modalidad3:hover,
+.img-modalidad4:hover {
+    opacity:0.2;
+}
+
+.img-modalidad1 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/panel.png');
+background-size:cover;
+}
+
+.img-modalidad2 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/mesa.png');
+background-size:cover;
+}
+
+.img-modalidad3 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/workshop.png');
+background-size:cover;
+}
+
+.img-modalidad4 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/relampago.png');
+background-size:cover;
+}
+
+.text-content{
+font-size:1.8em;
+color:#000;
+}
+
+
+.icon-social-condatos{
+height:2em;
+width:auto;
+padding:0;
+}
+
+.icon-social-condatos:hover{
+opacity:0.2;
+}

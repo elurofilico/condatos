@@ -1,0 +1,149 @@
+.agenda-condatos{
+height:auto;
+width:100%;
+background:url("../img/santiago1.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.titulo-agenda{
+padding-top:1em;
+padding-bottom:3em;
+color:#FFF;
+}
+
+.titulo-agenda, h1{
+padding-left:0;
+margin-left:0;
+font-size:4em;
+}
+
+.convocatoria-intro{
+background:#ccc;
+}
+
+.convocatoria-intro-1{
+padding:5em;
+}
+
+.convocatoria-intro-2{
+padding-top:16em;
+}
+
+.impacto-icon{
+text-align:center;
+}
+
+span.iconn{
+padding:0.5em;
+background:#FFF;
+border-bottom-width:1px;
+border-color:#000;
+border-radius:100%;
+font-size:5em;
+}
+
+span.iconn:hover{
+color:#9F90C2;
+background:#D4D9FE;
+}
+
+
+
+.contenido-pilares{
+padding-top:8em;
+padding-bottom:8em;
+margin-left:0;
+}
+
+.modal-header{
+background: rgba(167, 219, 177, 0.78);
+}
+
+.modalidades-presentacion{
+height:auto;
+width:100%;
+background:url("../img/santiago1.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.titulo-modalidades-presentacion{
+padding-top:1em;
+padding-bottom:3em;
+color:#FFF;
+padding-left:0;
+margin-left:0;
+font-size:2em;
+}
+
+.modalidades-img{
+width:15em;
+height:15em;
+}
+
+.modalidades{
+padding:2.5em;
+margin:0;
+}
+
+.img-modalidad1 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/eye-icon.png');
+background-size:cover;
+}
+
+.img-modalidad1:hover {
+    cursor:pointer; 
+    background:url('../img/geometry.gif');
+    background-size:cover;
+}
+
+.img-modalidad2 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/eye-icon.png');
+background-size:cover;
+}
+
+.img-modalidad2:hover {
+    background:url('../img/cuadrado.gif');
+    background-size:cover;
+}
+
+.img-modalidad3 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/eye-icon.png');
+background-size:cover;
+}
+
+.img-modalidad3:hover {
+    cursor:pointer; 
+    background:url('../img/triangulo.gif');
+    background-size:cover;
+}
+
+.img-modalidad4 {
+width:15em;
+height:15em;
+margin:0;
+padding:0;
+background:url('../img/eye-icon.png');
+background-size:cover;
+}
+
+.img-modalidad4:hover {
+    cursor:pointer; 
+    background:url('../img/taller.gif');
+    background-size:cover;
+}
