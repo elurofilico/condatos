@@ -539,7 +539,7 @@ table {
 .agenda-condatos{
 height:auto;
 width:100%;
-background:#A0F0DC;//url("../img/santiago1.jpg");
+background:#e5e1e0;//url("../img/santiago1.jpg");
 background-size:cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -547,7 +547,7 @@ background-attachment: fixed;
 
 .titulo-agenda{
 padding-top:1em;
-padding-bottom:3em;
+padding-bottom:1em;
 color:#4A4B5C;
 font-family: "brandon_textbold";
 }
@@ -558,13 +558,34 @@ margin-left:0;
 font-size:2em;
 font-family: "Open Sans";
 }
-
+.box {
+     width: 100%;
+     background:#E5E2E2;
+     border-radius: 20px 20px 20px 20px;
+     box-shadow: 5px 5px 4px #555;
+	 margin-top: 20px;
+ }
+ .box_sede {
+     width: 60%;
+     background:#E5E2E2;
+     border-radius: 20px 20px 20px 20px;
+     box-shadow: 5px 5px 4px #555;
+	 margin: 10px auto;
+ }
+ .box_importante {
+     width: 100%;
+     background:#ffffff;
+     border-radius: 20px 20px 20px 20px;
+     box-shadow: 5px 5px 4px #555;
+	 margin: 10px auto 20px auto;
+	 padding: 10px 20px;
+ }
 .convocatoria-intro{
 background:#ccc;
 }
 
 .convocatoria-intro-1{
-padding:5em;
+padding:1.5em 5em 1.5em 5em;
 }
 
 .convocatoria-intro-2{
@@ -596,16 +617,17 @@ text-align:center;
 
 span.iconn{
 padding:0.5em;
-background:#FFF;
+background:transparent;
 border-bottom-width:1px;
 border-color:#000;
 border-radius:100%;
 font-size:5em;
+color: #6D9F45;
 }
 
 span.iconn:hover{
-color:#9F90C2;
-background:#D4D9FE;
+color:#965fa6;
+background:#ffffff;
 }
 
 
@@ -617,27 +639,44 @@ margin-left:0;
 }
 
 .modal-header{
-background: rgba(167, 219, 177, 0.78);
+background: #965fa6;
 }
 
 .modalidades-presentacion{
 height:auto;
 width:100%;
 //background:url("../img/santiago1.jpg");
-background:#A0F0DC;
+background:#6D9F45;
 background-size:cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
-
+.titulo_sede {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto 0.5em auto;
+  color:#4A4B5C;
+  font-size:2em;
+  font-family: "brandon_textbold";
+  text-align: center;
+}
+.titulo_agenda {
+  max-width: 50%;
+  display: block;
+  margin: 1.5em auto 1.5em auto;
+  color:#4A4B5C;
+  font-size:2em;
+  font-family: "brandon_textbold";
+  text-align: center;
+}
 .titulo-modalidades-presentacion{
-padding-top:1em;
-padding-bottom:3em;
-color:#4A4B5C;
-padding-left:0;
-margin-left:0;
-font-size:2em;
-font-family: "Open Sans";
+  max-width: 50%;
+  display: block;
+  margin: 1.5em auto 1.5em auto;
+  color:#ffffff;
+  font-size:2em;
+  font-family: "brandon_textbold";
+  text-align: center;
 }
 
 .modalidades-img{
