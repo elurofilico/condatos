@@ -1007,6 +1007,20 @@ footer, .expertos {
   background-repeat: no-repeat;
   text-align: left;
   direction: ltr; 
+  margin: 0px auto -40px auto; }
+
+  .ministerio_log {
+  background: url('../img/logo_minsegpres.png') no-repeat;
+  background-size: 100%;
+  height: 63px;
+  max-width: 392px;
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; 
   margin: 0px auto 20px auto; }
 .abrelatam, .abrelatamcondatos {
   margin: 0px 0 0 0px;
