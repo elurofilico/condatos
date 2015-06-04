@@ -1009,7 +1009,7 @@ footer, .expertos {
   direction: ltr; 
   margin: 0px auto -40px auto; }
 
-  .ministerio_log {
+.ministerio_log {
   background: url('../img/logo_minsegpres.png') no-repeat;
   background-size: 100%;
   height: 63px;
