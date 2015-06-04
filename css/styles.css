@@ -869,12 +869,12 @@ h4 {
 .navbar { border: 0; }
 
 .navbar.navbar-condatos li>a {
-  color: white;
+  color: #965fa6;
   font-size: 14px;
 }
 
 .navbar.navbar-condatos .dropdown li>a {
-  color: #555;
+  color: #965fa6;
 }
 
 .navbar.navbar-condatos li>a:hover, .navbar.navbar-condatos li>a:focus {
@@ -975,8 +975,17 @@ footer, .expertos {
     background: url('../img/fondo_red.png') no-repeat;
     background-size: 100%;
     background-position: 50% 0;
-    padding-bottom: 255px;
+    padding-bottom: 20%;
     margin-top: 10px; }
+  .textointro{
+  background-color: #B9B7B6;
+  text-align: center;
+  font-family: "brandon_textbold";
+  color: #F4F2F2;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 4px 0;
+  }
   .intro p {
     color: #4a4b5c;
     font: 500 19px "brandon_textbold"; }
