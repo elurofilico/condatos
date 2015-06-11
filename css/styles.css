@@ -1008,6 +1008,26 @@ footer, .expertos {
   text-align: left;
   direction: ltr; 
   margin: 0px auto -40px auto; }
+  
+.comite{
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center; 
+  }
+  .comite ul {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  }
+  
+.comite li {
+  list-style-type: none;
+  display: inline;
+  padding: 10px 5px 10px 5px!important;
+  text-align: center; 
+  }
 
 .ministerio_log {
   background: url('../img/logo_minsegpres.png') no-repeat;
