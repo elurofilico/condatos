@@ -19,7 +19,7 @@
     background-color: #456; /* el color del marco */
     border: none;
     margin: 0;
-    width: 300px; /* forzamos el tamaño de la imagen */
+    width: 260px; /* forzamos el tamaño de la imagen */
   }
   .imgteaser a .more { /* es el área traslúcida del nombre */
     background-color: #123;  /* color de fondo */
@@ -28,9 +28,9 @@
     font-size: 22px;
     padding: 5px 10px;
     /* transparencia */
-    filter:alpha(opacity=65); /* IE genérico */
-    opacity:.65; /* Firefox */
-    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=65)'; /* IE8 */
+    filter:alpha(opacity=85); /* IE genérico */
+    opacity:.85; /* Firefox */
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=85)'; /* IE8 */
     /* posicionamos ese texto abajo y a la izquierda sin importar la altura de la imagen */
     position: absolute;
     bottom: 5px;
