@@ -1028,6 +1028,13 @@ footer, .expertos {
   padding: 10px 5px 10px 5px!important;
   text-align: center; 
   }
+  
+.cajasredes{
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: center; 
+  display: inline-block;
+  }
 
 .ministerio_log {
   background: url('../img/logo_minsegpres.png') no-repeat;
