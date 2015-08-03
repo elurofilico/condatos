@@ -1052,7 +1052,16 @@ footer, .expertos {
 .abrelatam, .abrelatamcondatos {
   margin: 0px 0 0 0px;
   vertical-align: top; }
-
+.contenedor_banner_home {
+  margin: 45px auto 0px auto;
+  width:100%;
+  text-align:center;
+  }
+.banner_home {
+  max-width:250px;
+  text-align:center;
+  display: inline-block;
+  }
 .abrelatam {
   height: 108px;
   width: 166px;
