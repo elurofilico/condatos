@@ -111,6 +111,24 @@ width: 580px;
     padding: 0;
 }
 /*--nuevos estilos--*/
+.sedes {
+    width: 100%;
+    background: #ffffff;
+    margin: 10px auto;
+	text-align: center;
+}
+.sedes a {
+  color: #4a4b5c;
+  display: inline-block;
+  font: 16px 'Open Sans';
+  margin: 5px 0 0 0;
+  width: 200px; }
+  .sedes a span {
+    display: block; }
+  .sedes a img {
+    margin-bottom: 10px; }
+  .sedes a:hover {
+    color: #18C9D2; }
 .redes {
  float: right;
  margin: 0;
@@ -158,6 +176,7 @@ width: 580px;
     display: inline-block;
 	background-color: #fff;
 	padding-top:10px;
+	padding-bottom: 10px;
 }
 .banner_home {
     max-width: 250px;
