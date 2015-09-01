@@ -290,7 +290,7 @@ nav a:focus {
 .top-menu ul li a:hover,.top-menu ul li a.active{
 	color:#18C9D2;
 }
-.top-menu ul li:nth-child(6){
+.top-menu ul li:nth-child(8){
  border:none;
 }
 /*--nav-responsive--*/
