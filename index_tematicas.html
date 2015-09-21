@@ -61,10 +61,10 @@ $(function(){
 
 							<li><a class="active scroll" href="#home" data-hover="Home">Home</a></li>
 							<!--<li><a class="scroll" href="#calendario" data-hover="Conoce Chile">Conoce Chile</a></li>-->
-							<li><a class="scroll" href="#convocatoria" data-hover="Convocatoria">Convocatoria</a></li>
 							<li><a class="scroll" href="#tematica" data-hover="Temáticas">Temáticas</a></li>
 							<li><a href="http://condatos2015.sched.org/" data-hover="Programas">Programas</a></li>
 							<li><a class="scroll" href="#gallery" data-hover="Comité Académico">Comité Académico</a></li>
+							<li><a class="scroll" href="#convocatoria" data-hover="Convocatoria">Convocatoria</a></li>
 							<!--<li><a href="https://docs.google.com/forms/d/1sXuFMZFwv0xQbLwmYZS2MsMoH-ICqTN2Ic2q7A2Wc_U/viewform" data-hover="Inscripción">Inscripción</a></li>-->
 							<!--<li><a class="scroll" href="#hackaton" data-hover="HackConDatos">HackConDatos</a></li>-->
 							<!--<li><a href="https://hackdash.org/dashboards/condatos" data-hover="hackdash">hackdash</a></li>-->
@@ -152,35 +152,303 @@ $(function(){
 					
 			  
 			 <!--end-banner-->
-			 	
-						<!--start-convocatoria-->
+			 	<!--start-services-->
+					<div class="tematica" id="tematica">
+					 <h3 class="tittle two">Temáticas</h3>
+						<br>
+						<div class="box"><p>
+						Este año, en coordinación con la 3era Conferencia Internacional de Datos Abiertos de Ottawa, 
+						la nueva reunión de ConDatos va a tomar los tres pilares y cuatro modalidades de presentación para 
+						armar su agenda. 
+						</p></div>
+						
+						<div class="serve-grids">
+							<div class="col-md-3 service-grid">
+								<div class="icon">
+								 <i class="glyphicon glyphicon-globe iconn"></i>
+								</div>
+								<h5>Impacto</h5>
+								<p>Iniciativas de datos abiertos que, liderando la revolución de datos, hayan sido ejecutadas o estudiadas. Se puede tratar también de propuestas de medición de impacto.</p>
+								<a href="#" data-toggle="modal" data-target="#impacto" class="btn btn-default">Ver más</a>
+							</div>
+							<div class="col-md-3 service-grid">
+								<div class="icon">
+								 <i class="glyphicon glyphicon-tree-deciduous  iconn"></i>
+								</div>
+								<h5>Compartir</h5>
+								<p>Construyendo el mapa regional de los datos abiertos.</p>
+								<a href="#" data-toggle="modal" data-target="#compartir" class="btn btn-default">Ver más</a>
+							</div>
+							<div class="col-md-3 service-grid">
+								<div class="icon">
+								 <i class="glyphicon glyphicon-road iconn"></i>
+								</div>
+								<h5>Acción</h5>
+								<p>Demostraciones prácticas de herramientas, implementaciones o ejercicios prácticos para realizar colectivamente en ConDatos 2015.</p>
+								<a href="#" data-toggle="modal" data-target="#accion" class="btn btn-default">Ver más</a>
+							</div>
+						
+						<div class="clearfix"></div>
+
+					</div>
+					<div class="box"><p class="importante-text">
+					<b>Importante</b>: Todas las personas que presenten propuestas, y todos los posible oradores, deben registrarse 
+					en este <!--<a href="#" data-toggle="modal" data-target="#pilarModal" class="btn btn-default btn-xl">-->
+					<a href="https://docs.google.com/forms/d/1sXuFMZFwv0xQbLwmYZS2MsMoH-ICqTN2Ic2q7A2Wc_U/viewform" class="btn btn-default btn-xl">link</a>.</p>
+					<p>Si necesitan contar con una beca para poder asistir a Condatos 2015, por favor indicarlo en ese registro.</p>
+					<br><p> 
+					La aceptación de las propuestas no implican la aceptación inmediata de la solicitud de la beca para 
+					participar de Condatos 2015. 
+					</p></div><br>
+					<div>
+					<h3 class="tittle two">Modalidades de presentación</h3><br>
+						<div class="caja_modalidades">
+							<div class="modalidades">
+								<a href="#" data-toggle="modal" data-target="#panel">
+								<span class="text-content"><span>Panel</span></span><br><img src="images/panel.png"></a>
+							</div>
+							
+							<div class="modalidades">
+								<a href="#" data-toggle="modal" data-target="#mesa">
+								<span class="text-content"><span>Mesa Redonda</span></span><br><img src="images/mesa.png"></a>
+							</div>
+							
+							<div class="modalidades">
+								<a href="#" data-toggle="modal" data-target="#taller">
+								<span class="text-content"><span>Taller</span></span><br><img src="images/workshop.png"></a>
+							</div>
+							
+							<div class="modalidades">
+								<a href="#" data-toggle="modal" data-target="#relampago">
+								<span class="text-content"><span>Charla Relámpago</span></span><br><img src="images/relampago.png"></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+<!-- Ventana Modal accion -->
+<div class="modal fade" id="accion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Accion</h4>
+      </div>
+      <div class="modal-body">
+        <p>Aquí se podrán presentar propuestas de talleres para enseñar de manera práctica a utilizar herramientas, mostrar implementaciones, visualizaciones y promover iniciativas regionales.</p>
+<br>
+        <p>Si tienes una idea para trabajar in situ en ConDatos2015, también puedes presentarla.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Modal compartir -->
+<div class="modal fade" id="compartir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Compartir</h4>
+      </div>
+      <div class="modal-body">
+            <p>Tomando lo trabajado en la Agenda Colaborativa de ConDatos 2014, en el track de Compartir! esperamos abrir debates sobre los temas que han surgido producto de aquella instancia, así como acerca de la forma de avanzar concretamente hacia la agenda regional.</p>
+<br>
+			<p>Políticas y estándares: Estándares de datos abiertos, open data charter, decretos y leyes.</p>
+<br>
+			<p>El impacto económico de los datos abiertos: historias de reutilización y nuevos negocios, emprendimiento.</p>
+<br>
+			<p>Escalar ideas que funcionan: Cómo poder conocer y replicar aquellas iniciativas de publicación o reutilización que empíricamente han funcionado.</p>
+<br>
+			<p>Qué no hacer: Historias de proyectos que no funcionaron para poder aprender de aquellas experiencias ya implementadas.</p>
+<br>
+			<p>Inclusión: Cómo lograr que los beneficios de los datos abiertos lleguen a todos y todas en la región.</p>
+<br>
+			<p>Se podrán presentar tanto propuestas de Paneles, Mesas Redondas, Talleres y Charlas Relámpago.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Modal Impacto -->
+<div class="modal fade" id="impacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Impacto</h4>
+      </div>
+      <div class="modal-body">
+        <p>Iniciativas lideradas tanto por Gobiernos como organizaciones de la sociedad civil, que tengan historias de impacto en la vida de la población.</p>
+		<br>
+		<p>Las propuestas deberán presentar evidencia del impacto o los resultados esperados del proyectos.</p>
+		<br>
+		<p>Se podrán presentar propuestas de Paneles, Mesas Redondas y Charlas Relámpago.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Modal panel -->
+<div class="modal fade" id="panel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Paneles</h4>
+      </div>
+      <div class="modal-body">
+        <p>Cada Panel durará una hora y podrá tener hasta 4 panelistas y un moderad@r. Se espera que cada uno de los panelistas haga una explicación de un trabajo de investigación o experiencia concreta de trabajo con datos abiertos y las conclusiones alcanzadas. Se puede proponer un Panel completo, presentando propuestas de oradores que previamente hayan sido contactados. La responsabilidad de contactar a los oradores y garantizar su participación será de quien presente la propuesta. Si su propuesta es aceptada, 15 días luego de haber recibido la comunicación oficial, se debe enviar una prueba de que los oradores están comprometidos a asistir a ConDatos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Modal mesa -->
+<div class="modal fade" id="mesa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mesa Redonda</h4>
+      </div>
+      <div class="modal-body">
+        <p>Las Mesas Redondas estarán compuestas por hasta tres participantes y un moderad@r. Cada Mesa durará en total una hora. Cada uno de los participantes tendrá 10 minutos para exponer su experiencia y luego abrir a preguntas del público. El objetivo de las Mesas Redondas es que sean interactivas, con mucho espacio para las preguntas y los comentarios del público, armando así un debate coordinado por el moded@r. Se puede proponer una Mesa Redonda completa, presentando propuestas de oradores que previamente hayan sido contactados. La responsabilidad de contactar a los oradores y garantizar su participación será de quien presente la propuesta. Si su propuesta es aceptada, 15 días luego de haber recibido la comunicación oficial, se debe enviar una prueba de que los oradores están comprometidos a asistir a ConDatos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Modal taller -->
+<div class="modal fade" id="taller" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Taller</h4>
+      </div>
+      <div class="modal-body">
+        <p>En los Talleres se espera que abordemos algunas lecciones prácticas sobre el uso de herramientas para obtener, publicar o reutilizar datos abiertos. Tendrán duración de una hora y media a dos horas*, y desde la organización proveeremos el espacio, una computadora, un proyector y una pantalla para su realización. *Se puede proponer que sea más largo si es necesario.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Modal relampago -->
+<div class="modal fade" id="relampago" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Charla Relámpago</h4>
+      </div>
+      <div class="modal-body">
+        <p>Habrá espacio para Charlas Relámpago en ambos días de ConDatos. Las Charlas Relámpago serán presentaciones de hasta 10 minutos, donde la organización de ConDatos establecerá el orden de presentación y proveerá de un moderad@r.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--//end-services-->
+
+	<!--start-calendario
 	
-				<div class="about" id="convocatoria">
-				  <h3 class="tittle two">Convocatoria nueva sede ConDatos</h3>
+				<div class="about" id="calendario">
+				  <h3 class="tittle two">Santiago de Chile</h3>
 				   <div class="ab-top">
 					<div class="col-md-7 ab-left">
-					 <p>
-					 <br>
-					 
-					 <p>En virtud de las manifestaciones de interés por parte de algunos países para ser sede de la IV Conferencia Regional de Datos Abiertos para América Latina y el Caribe, se abren las postulaciones a partir del día 18 de septiembre de 2015 con fecha límite de presentación, el día 2 de octubre a las 23:59 hora de Santiago de Chile.</p>
+					 <p><p><b>Santiago de Chile</b>, se encuentra localizada en la Región Metropolitana y es el epicentro político y cultural de Chile. A continuación se presenta información útil para los que nos visitan de fuera:</p>
+								
 
-					 <p>Los países que quieran ser anfitriones del evento, deberán apegarse a lo planteado en el punto 2 del Anexo I al documento de Estructura y normas de funcionamiento de la Red de Gobierno Electrónico de América Latina y el Caribe (Red Gealc), <b><a href="Anexo I Estatutos Red Gealc (3).doc">Ver Documento...</a></b></p>
+<br>
+<b>Transporte</b>
+<p>Hay vuelos a Santiago de Chile desde cualquier gran aeropuerto en el mundo.</p>
 
-					 <p>El siguiente anfitrión de ConDatos será escogido por el comité ejecutivo de la RedGealc en base a las recomendaciones del grupo de Datos Abiertos de la misma organización.</p>
+<p>El transporte entre el aeropuerto y el lugar de alojamiento correrá por cuenta de los participantes. Se recomienda utilizar los servicios de buses, transfers y taxi autorizados del Aeropuerto Internacional de Santiago Aurturo Menino Benitez. </p>
+				 
+<p>El servicio regular de bus entre el aeropuerto lo brinda Centropuerto:www.centropuerto.cl</p>
 
-					 <p>Para enviar las postulaciones deben ser al siguiente correo facilitador@redgealc.net<mailto:facilitador@redgealc.net>. Por último, el siguiente país anfitrión será anunciado en la en la IX Reunión anual a realizarse en México el 26 y 27 de octubre.</p>
+<p>Existen dos empresas de tranfer oficiales:</p>			
+<p>- Transvip </p>	
+<p>- TranferDelfos </p>	
+<p>La información sobre taxis oficiales del aeropuerto puede ser consultadas : www.aeropuertosantiago.cl</p>												
+<br>
+<b>Migración</b>				
+<p>La obtención de los permisos necesarios para ingresar a Chile correrá por cuenta de los participantes. A continuación les detallaremos información importante a tener en cuenta antes de viajar a Condatos 2015
+Visas y documentos</p>
+				 
+<p>Para ingresar a Chile, es necesario presentar la documentación de identificación (cédula de identidad o pasaporte) y la visa estampada (dependiendo del país de procedencia). 
+Los ciudadanos sudamericanos, de la Unión Europea, Estados Unidos, Canadá y Australia no necesitan visado como turista</p>
 						
-					 <br>
+<p>Sin embargo, algunos países deben pagar una tasa en efectivo (impuesto de reciprocidad) al llegar al aeropuerto de Chile:</p>
+<br>							 
+<p>Estadounidenses deben pagar una tasa de 131 dólares</p>
+<p>Canadienses deben pagar una tasa de 132 dólares. </p>
+<p>Australianos deben pagar una tasa de 61 dólares</p>
+<p>Mexicanos deben pagar una tasa de 23 dólares</p>
+<p>Albaneses deben pagar una tasa una de 30 dólares</p>
+							
+							
+<p>Los turistas de la Unión Europea y los neozelandeses no deben pagar tasa al ingresar al país.</p>						
+<p>Al entrar en el país se entrega un permiso de 90 días, renovable para 90 días más.					
+*Toda esta información figura en la web del SERNATUR	chile.travel/acerca-chile/consejos-para-viajeros</p>				
 
-					</p>
+<br>				
+<b>Alojamiento</b>
+
+<p>El Centro Cultural Gabriela Mistral (GAM) donde se desarrollará Condatos 2015 está situado en la Comuna de Santiago Centro y alrededor del mismo se encuentran muchas opciones variadas de alojamiento, desde Hoteles 5 estrellas a hostels</p>
+				
+<br>		
+<b>Restaurantes</b>
+<p>Las Propinas no estan incluídas. Es Práctica otorgar el 10% del total del Consumo en restaurantes, dependiendo de la Calidad del Servicio. </p>
+
+<br>
+<b>Condatos 2015 </b>
+<p>Se llevará a cabo en el GAM, situado a metros de la Calle Lastarria donde podrán encontrar una gran variedad de restaurants y bares para todos los tipos de gustos y presupuestos</p>
+
+<br>							
+<b>Moneda</b>
+<p>Puedes intercambiar pesos para tu moneda local en el aeropuerto, hoteles, bancos, y en las oficinas de cambio. Para saltar este proceso también puedes ir a un cajero automático y retirar dinero con una tarjeta Visa o Mastercard. Consulta tu banco acerca de la comisión por este tipo de servicio. Normalmente vale la pena y se obtiene un tipo de cambio bastante decente. </p>
+
+<p>Las tarjetas de crédito y débito son aceptadas en la mayoría de los establecimientos comerciales. Sin embargo, se recomienda portar dinero en efectivo, pues por ejemplo los taxis no aceptan ningún tipo de tarjeta.</p>
+
+<br>				
+<b>Electricidad</b>
+<p>La corriente eléctrica en Chile es de 220 Volts y 50 Hertz. Los adaptadores de 3 terminales eléctricos no suelen usarse, sin embargo, los convertidores de 2 terminales se pueden comprar en cualquier negocio que venda piezas eléctricas.</p>
+
+<br>
+<b>Mas recomendaciones</b>
+<p>Visita la web del SERNATUR para viajeros <a href="http://chile.travel/acerca-chile/consejos-para-viajeros/"> Chile Travel</a></p></p>
 					</div>
 					
 					  <div class="clearfix"></div>
 				   </div>
 				</div>
 				
-			<!--end-convocatoria-->
-			
+			end-calendario-->
 			
 			<!--start-gallery-->
 		<div class="gallery" id="gallery">
@@ -384,8 +652,76 @@ Integra el Consejo Ejecutivo de la Unidad de Acceso a la Información Pública y
 		</div>
 		<!--end comite-->
 		
+		<!--start-hack
 	
+				<div class="about" id="hackaton">
+				  <h3 class="tittle two">HACK CONDATOS 2015</h3>
+				   <div class="ab-top">
+					<div class="col-md-7 ab-left">
+					 <p>
+					 
+					 <img style="width:100%;"src="images/HackConDatos-logo.png" alt="Hack ConDatos">
+					 <br>
+					 
+					 <p>Este año el Consejo para la Transparencia en conjunto con el Ministerio
+						Secretaría General de la Presidencia, el Programa de Naciones Unidas para el
+						Desarrollo, la Comisión Económica para América Latina y el Caribe, y la
+						Iniciativa Latinoamérica para los Datos Abiertos, le invita a participar en
+						el Concurso de Reutilización de Datos Abiertos "Hackatón Regional CONDATOS
+						2015: Hacia el Desarrollo Sostenible", el que se desarrollará el día 9 de
+						septiembre en el Centro GAM.</p>
 
+						<p>Esta instancia busca promover el desarrollo de aplicaciones en base de datos
+						públicos teniendo un impacto a nivel regional y cuenta con 12 mil dólares en
+						premios a repartir.</p>
+														
+						<br>
+
+						<b>Para inscribirse:</b> <a href="http://goo.gl/forms/7FMU5PY2Q5/"> http://goo.gl/forms/7FMU5PY2Q5</a>
+						<br><br>
+
+						<b>Ingresar ideas:</b> <a href="https://hackdash.org/dashboards/condatos/"> https://hackdash.org/dashboards/condatos</a>
+						<br><br>
+
+						<b>Mira a los ganadores 2014:</b> <a href="http://labtransparencia.cl/ganadoresabrecl/"> http://labtransparencia.cl/ganadoresabrecl/</a>
+						<br><br>
+
+					</p>
+					</div>
+					
+					  <div class="clearfix"></div>
+				   </div>
+				</div>
+				
+			end-hack-->
+			
+			<!--start-convocatoria-->
+	
+				<div class="about" id="convocatoria">
+				  <h3 class="tittle two">Convocatoria nueva sede ConDatos</h3>
+				   <div class="ab-top">
+					<div class="col-md-7 ab-left">
+					 <p>
+					 <br>
+					 
+					 <p>En virtud de las manifestaciones de interés por parte de algunos países para ser sede de la IV Conferencia Regional de Datos Abiertos para América Latina y el Caribe, se abren las postulaciones a partir del día 18 de septiembre de 2015 con fecha límite de presentación, el día 2 de octubre a las 23:59 hora de Santiago de Chile.</p>
+
+					 <p>Los países que quieran ser anfitriones del evento, deberán apegarse a lo planteado en el punto 2 del Anexo I al documento de Estructura y normas de funcionamiento de la Red de Gobierno Electrónico de América Latina y el Caribe (Red Gealc), <b><a href="Anexo I Estatutos Red Gealc (3).doc">Ver Documento...</a></b></p>
+
+					 <p>El siguiente anfitrión de ConDatos será escogido por el comité ejecutivo de la RedGealc en base a las recomendaciones del grupo de Datos Abiertos de la misma organización.</p>
+
+					 <p>Para enviar las postulaciones deben ser al siguiente correo facilitador@redgealc.net<mailto:facilitador@redgealc.net>. Por último, el siguiente país anfitrión será anunciado en la en la IX Reunión anual a realizarse en México el 26 y 27 de octubre.</p>
+						
+					 <br>
+
+					</p>
+					</div>
+					
+					  <div class="clearfix"></div>
+				   </div>
+				</div>
+				
+			<!--end-hack-->
 		
 				
 				<!-- footer-->
