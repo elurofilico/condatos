@@ -3,3 +3,16 @@ _site/
 *~
 node_modules/
 bower_components/
+
+# Windows thumbnail cache files
+Thumbs.db
+thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+desktop.ini
+
+# Windows shortcuts
+*.lnk
